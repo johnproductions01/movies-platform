@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies - NovaScreen</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"><!-- hedha link lstyle ta3 recherche i geuss khalih-->
+    <link rel="stylesheet" href="style3.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>NovaScreen</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sign_in.html">Subscribe</a></li>
+                    <li><a href="movies.html">Movies</a></li>
+                    <li><a href="media.html">Reels</a></li>
+                    <li><a href="#">Popular</a></li> <!--hedhy badalha b page ta3 watch wali faza wali na7iha idk-->
+                    <li><a href="meme.html">Memes</a></li>
+                    <li class="search-container">
+                        <input type="text" placeholder="Search movies...">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <!-- Movie Categories with Horizontal Scroll -->
+                    <div class="category">
+                        <h2>Romance</h2>
+                        <div class="movie-scroll-container" id="romanceScroll">
+                            <img src="images/2.jpg" alt="Romance Movie 1">
+                            <img src="images/3.jpg" alt="Romance Movie 2">
+                            <img src="images/4.jpg" alt="Romance Movie 3">
+                            <img src="images/11.jpg" alt="Romance Movie 4">
+                            <img src="images/12.jpg" alt="Romance Movie 5">
+                            <img src="images/13.jpg" alt="Romance Movie 6">
+                            <img src="images/2.jpg" alt="Romance Movie 1">
+                            <img src="images/3.jpg" alt="Romance Movie 2">
+                            <img src="images/4.jpg" alt="Romance Movie 3">
+                            <img src="images/11.jpg" alt="Romance Movie 4">
+                            <img src="images/12.jpg" alt="Romance Movie 5">
+                            <img src="images/13.jpg" alt="Romance Movie 6">
+                            <!-- Add more romance movie images as needed -->
+                        </div>
+                        <button class="button-scroll left" onclick="scrollMovies('romanceScroll', -200)">&lt;</button>
+                        <button class="button-scroll right" onclick="scrollMovies('romanceScroll', 200)">&gt;</button>
+                    </div>
+
+                    <div class="category">
+                        <h2>Action</h2>
+                        <div class="movie-scroll-container" id="actionScroll">
+                            <img src="images/5.jpg" alt="Action Movie 1">
+                            <img src="images/6.jpg" alt="Action Movie 2">
+                            <img src="images/4.jpg" alt="Romance Movie 3">
+                            <img src="images/14.jpg" alt="Romance Movie 4">
+                            <img src="images/15.jpg" alt="Romance Movie 5">
+                            <img src="images/16.jpg" alt="Romance Movie 6">
+                            <img src="images/5.jpg" alt="Action Movie 1">
+                            <img src="images/6.jpg" alt="Action Movie 2">
+                            <img src="images/4.jpg" alt="Romance Movie 3">
+                            <img src="images/14.jpg" alt="Romance Movie 4">
+                            <img src="images/15.jpg" alt="Romance Movie 5">
+                            <img src="images/16.jpg" alt="Romance Movie 6">
+                        </div>
+                        <button class="button-scroll left" onclick="scrollMovies('actionScroll', -200)">&lt;</button>
+                        <button class="button-scroll right" onclick="scrollMovies('actionScroll', 200)">&gt;</button>
+                    </div>
+
+                    <div class="category">
+                        <h2>Comedy</h2>
+                        <div class="movie-scroll-container" id="comedyScroll">
+                            <img src="images/8.jpg" alt="Comedy Movie 1">
+                            <img src="images/9.jpg" alt="Comedy Movie 2">
+                            <img src="images/10.jpg" alt="Comedy Movie 3">
+                            <img src="images/20.jpg" alt="Comedy Movie 4">
+                            <img src="images/18.jpg" alt="Comedy Movie 5">
+                            <img src="images/19.jpg" alt="Comedy Movie 20">
+                            <img src="images/8.jpg" alt="Comedy Movie 1">
+                            <img src="images/9.jpg" alt="Comedy Movie 2">
+                            <img src="images/10.jpg" alt="Comedy Movie 3">
+                            <img src="images/20.jpg" alt="Comedy Movie 4">
+                            <img src="images/18.jpg" alt="Comedy Movie 5">
+                            <img src="images/19.jpg" alt="Comedy Movie 20">
+                        </div>
+                        <button class="button-scroll left" onclick="scrollMovies('comedyScroll', -200)">&lt;</button>
+                        <button class="button-scroll right" onclick="scrollMovies('comedyScroll', 200)">&gt;</button>
+                    </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="NovaScreen Logo">
+            </div>
+            <div class="footer-links">
+                <a href="#">Contact</a>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 NovaScreen. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Horizontal Scrolling -->
+    <script src="scroll.js">
+       
+    </script>
+</body>
+</html>

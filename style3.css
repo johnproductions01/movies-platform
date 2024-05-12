@@ -1,0 +1,170 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #7b68ee;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    overflow: hidden; /* Clear the floats within the nav */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    float: left;
+    margin-right: 10px; /* Add spacing between menu items */
+}
+
+nav ul li a {
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow effect */
+    transition: background-color 0.3s ease;
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #5636b8; /* Updated hover color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search-container {
+    float: right;
+    padding: 10px;
+}
+
+.search-container input[type="text"] {
+    padding: 10px; /* Increase padding for larger input */
+    margin-top: 8px;
+    font-size: 16px; /* Increase font size */
+    border: none;
+    border-radius: 4px;
+    width: 200px; /* Adjust width of the search input */
+}
+
+.search-container button {
+    padding: 10px 15px; /* Increase padding for larger button */
+    margin-top: 8px;
+    font-size: 16px; /* Increase font size */
+    border: none;
+    border-radius: 4px;
+    background-color: #5636b8; /* Match hover color */
+    color: white;
+    cursor: pointer;
+}
+
+
+main {
+    padding: 20px 0;
+}
+/* Styles for scrolling buttons */
+.category {
+    margin-bottom: 40px;
+    position: relative; /* Ensure position context for absolute button positioning */
+}
+
+.category h2 {
+    color: #7b68ee;
+    margin-bottom: 10px;
+}
+
+.movie-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 10px; /* Add some padding at bottom for button alignment */
+    overflow: hidden;
+}
+
+.movie-scroll-container img {
+    width: 200px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 8px;
+    
+}
+
+/* Styles for scroll buttons */
+.button-scroll {
+    position: absolute;
+    top: 50%; /* Position at vertical center of category */
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: rgba(123, 104, 238, 0.7); /* Purple with transparency */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+   
+}
+
+.button-scroll:hover {
+    background-color: rgba(86, 54, 184, 0.9); /* Darker purple on hover */
+}
+
+.button-scroll.left {
+    left: 10px; /* Position left button */
+
+
+}
+
+.button-scroll.right {
+    right: 10px; /* Position right button */
+    
+}
+
+
+footer {
+    background-color: #7b68ee;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.logo img {
+    width: 120px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}

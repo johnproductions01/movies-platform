@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In/Up</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+     <!-- Header with Navigation Bar -->
+     <header>
+        <div class="container">
+            <h1>NovaScreen</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sign_in.html">Subscribe</a></li>
+                    <li><a href="movies.html">Movies</a></li>
+                    <li><a href="media.html">Reels</a></li>
+                    <li><a href="#">Popular</a></li> <!--hedhy badalha b page ta3 watch wali faza wali na7iha idk-->
+                    <li><a href="meme.html">Memes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+    <div class="container">
+        <h2>Sign In</h2>
+        <form id="signupForm" onsubmit="return validateForm()">
+            <label for="name" >Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="nickname">Nickname:</label>
+            <input type="text" id="nickname" name="nickname" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="favoriteType">Favorite Type of Movies:</label>
+            <select id="favoriteType" name="favoriteType" required>
+                <option value="action">Action</option>
+                <option value="comedy">Comedy</option>
+                <option value="drama">Drama</option>
+                <option value="horror">Horror</option>
+                <option value="horror">Romantic</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <label for="favoriteActor">Favorite Actor:</label>
+            <input type="text" id="favoriteActor" name="favoriteActor" required>
+
+            <label for="favoriteMovie">Favorite Movie:</label>
+            <input type="text" id="favoriteMovie" name="favoriteMovie" required>
+
+            <label for="comment">Special Comment:</label>
+            <textarea id="comment" name="comment" rows="4"></textarea>
+
+            <!-- CAPTCHA Verification -->
+            <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</main>
+ <!-- Footer -->
+ <footer>
+    <div class="container">
+        <div class="logo">
+            <img src="logo.png" alt="NovaScreen Logo">
+        </div>
+        <div class="footer-links">
+            <a href="#">Contact</a>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 NovaScreen. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
